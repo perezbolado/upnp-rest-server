@@ -1,0 +1,13 @@
+<!--templates/index.html-->
+{% set title = "Upnp" %}
+
+{% if locations %}
+    <table>
+    <tr><th>Location</th></tr>
+    {% for location in locations %}
+        <tr><td>{{ location }}</td></tr>
+    {% endfor %}
+    </table>
+{% else %}
+    <p>No locations are available.</p>
+{% endif %}
